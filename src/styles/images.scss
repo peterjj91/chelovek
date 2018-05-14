@@ -1,0 +1,95 @@
+
+.icon {
+  display: inline-block;
+
+  &__afisha {
+    background: url("../img/afisha-logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 116px;
+    height: 25px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+      background: url("../img/afisha-logo@2x.png");
+    }
+  }
+
+  &__village {
+    background: url("../img/village-logo.png");
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 93px;
+    height: 34px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+      background: url("../img/village-logo@2x.png");
+    }
+  }
+
+  &__profile {
+    @include sprite($profile)
+  }
+
+  &__profile2 {
+    @include sprite($profile2)
+  }
+
+  &__dialog {
+    @include sprite($dialog)
+  }
+
+  &__check {
+    @include sprite($check)
+  }
+
+  &__like {
+    @include sprite($like)
+  }
+
+  &__location2 {
+    @include sprite($location2)
+  }
+
+  &__fb {
+    @include sprite($social-fb);
+  }
+
+  &__vk {
+    @include sprite($social-vk);
+  }
+
+  &__inst {
+    @include sprite($social-inst);
+  }
+
+  &__fb-grey {
+    @include sprite($social-fb-grey);
+  }
+
+  &__vk-grey {
+    @include sprite($social-vk-grey);
+  }
+
+  &__inst-grey {
+    @include sprite($social-inst-grey);
+  }
+}
+
+.logo {
+  width: 136px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: top;
+  background: url("../img/logo.png");
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  @media(max-width: $screen-sm){
+    width: 90px;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+    background: url("../img/logo-2x.png");
+  }
+}
+

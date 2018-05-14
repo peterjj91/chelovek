@@ -1,0 +1,36 @@
+.head-h1 {
+  font-size: 48px;
+  line-height: normal;
+  letter-spacing: 2px;
+
+  @media (max-width: $screen-md) {
+    font-size: 30px;
+  }
+  @media (max-width: $screen-sm) {
+    font-size: 33px;
+  }
+}
+
+.head-h2 {
+  font-size: 24px;
+
+  @media (max-width: $screen-sm) {
+    font-size: 19px;
+  }
+}
+
+.head-h3 {
+  font-size: 21px;
+
+  @media (max-width: $screen-sm) {
+    font-size: 20px;
+  }
+}
+
+strong {
+  font-family: $cambria-bold;
+}
+
+p {
+  font-size: 20px;
+}

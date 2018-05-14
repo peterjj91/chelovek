@@ -1,0 +1,47 @@
+.float-ad {
+  position: fixed;
+  top: 390px;
+  right: 0;
+  z-index: 1;
+
+  &__btn {
+    display: table;
+    width: 261px;
+    height: 95px;
+    border: 6px solid transparent;
+    border-radius: 15px;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+
+    &:hover, &:focus {
+      text-decoration: none;
+      color: white;
+    }
+
+    &__inside {
+      border-radius: 10px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    &--orange {
+      border-color: #FFECDC;
+
+      .float-ad__btn__inside {
+        background-color: #e18c44;
+      }
+    }
+
+    &--green {
+      border-color: #D1EEE2;
+
+      .float-ad__btn__inside {
+        background-color: #408146;
+      }
+    }
+  }
+}
