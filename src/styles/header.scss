@@ -10,6 +10,50 @@
     padding-top: 26px;
   }
 
+  &__fix {
+    background-color: white;
+    position: fixed;
+    opacity: -1;
+    height: 81px;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+
+    &.affix {
+      width: 100%;
+      z-index: 2;
+      position: fixed;
+      display: block;
+      top: 0;
+      opacity: 1;
+    }
+
+    &__logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 50px;
+    }
+
+    &__nav {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: $cambria-bold;
+      letter-spacing: 3px;
+
+      li {
+        a {
+          color: #408146;
+          padding: 0;
+          font-size: 27px;
+          text-decoration: none;
+
+          &:hover, &:focus {
+            color: #408146;
+          }
+        }
+      }
+    }
+  }
+
   &__container {
     @include container-fixed;
 
@@ -281,10 +325,6 @@
 
   img {
     position: absolute;
-    //left: 50%;
-    //top: 50%;
-    //transform: translate(-50%, -50%);
-    //width: 100%;
     top: 0;
     right: 0;
     height: 100%;

@@ -71,3 +71,11 @@ $(document).mouseup(function (e){
         $.sidr('close', 'sidr-right');
     }
 });
+
+$(document).ready(function(){
+    $("#myNav").affix({
+        offset: {
+            top: $(".header").outerHeight(true)
+        }
+    });
+});
