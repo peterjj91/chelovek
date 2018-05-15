@@ -12,11 +12,11 @@
 
   &__btn {
     display: table;
-    width: 261px;
-    height: 95px;
+    width: 230px;
+    height: 80px;
     border: 6px solid transparent;
     border-radius: 15px;
-    font-size: 27px;
+    font-size: 20px;
     color: white;
     text-align: center;
     line-height: normal;
@@ -24,9 +24,9 @@
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
 
     @media(max-width: $screen-lg){
-      width: 240px;
-      height: 80px;
-      font-size: 20px;
+      width: 190px;
+      height: 74px;
+      font-size: 16px;
     }
 
     &:hover, &:focus {

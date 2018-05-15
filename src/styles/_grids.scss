@@ -26,7 +26,7 @@ $screen-desktop:             $screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  1630px;
+$screen-lg:                  1950px;
 $screen-lg-min:              $screen-lg;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min;
@@ -60,7 +60,7 @@ $container-tablet:             (100%);
 $container-sm:                 $container-tablet;
 
 // Medium screen / desktop
-$container-desktop:            1360px + $grid-gutter-width;
+$container-desktop:            1160px + $grid-gutter-width;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop;
 

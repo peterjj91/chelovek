@@ -168,6 +168,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (min-width: $screen-mob) {
+      width: 42%;
+    }
   }
 
   &__slogan {
@@ -179,7 +183,8 @@
     color: #383838;
     @media(max-width: $screen-lg){
       letter-spacing: normal;
-      margin-right: 0;
+      font-size: 17px;
+      margin-right: 50px;
     }
 
     &__wrapper {
@@ -187,8 +192,8 @@
       padding-left: 17px;
 
       @media(max-width: $screen-lg){
-        padding-left: 230px;
         margin-top: 0px;
+        padding-left: 0;
       }
       @media(max-width: $screen-md){
         margin-top: 0;
@@ -217,7 +222,8 @@
     }
 
     &--simple {
-      @media(max-width: $screen-lg){
+
+      @media(max-width: $screen-sm){
         display: none;
       }
     }
@@ -323,6 +329,9 @@
       @media(max-width: $screen-sm){
         padding-left: 0;
         padding-right: 0;
+      }
+      @media(max-width: $screen-mob){
+        width: 50%;
       }
 
       & > li {
