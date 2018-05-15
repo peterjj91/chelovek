@@ -6787,9 +6787,6 @@ input, textarea, button {
     position: absolute;
     top: 0;
     left: 0; }
-    @media (min-width: 1050px) {
-      .header__side {
-        width: 42%; } }
   .header__slogan {
     font-size: 20px;
     letter-spacing: 1px;
@@ -6915,6 +6912,9 @@ input, textarea, button {
       @media (max-width: 1050px) {
         .header__info--footer {
           width: 50%; } }
+      @media (max-width: 650px) {
+        .header__info--footer {
+          width: 100%; } }
       .header__info--footer > li {
         width: 456px;
         margin-bottom: 25px; }
@@ -6930,6 +6930,10 @@ input, textarea, button {
           display: none; }
         .header__info--footer > li:nth-child(2) {
           padding-left: 0; }
+      .header__info--footer .header__list__text--phone {
+        margin-top: 32px; }
+      .header__info--footer .header__list__text:before {
+        top: 2px; }
   .header__list {
     padding: 0;
     list-style: none; }
@@ -6990,6 +6994,11 @@ input, textarea, button {
         background-position: -242px -50px;
         width: 20px;
         height: 20px; }
+      .header__list__text--copyright:before {
+        content: '©';
+        font-size: 25px;
+        top: -5px !important;
+        opacity: 0.5; }
       .header__list__text--email {
         color: #e18c44; }
         .header__list__text--email:hover, .header__list__text--email:focus {
@@ -7169,7 +7178,8 @@ input, textarea, button {
 
 .footer__top {
   background-image: url(../img/footer-top.jpg);
-  background-size: contain; }
+  background-size: contain;
+  text-align: center; }
   @media (max-width: 1950px) {
     .footer__top {
       padding: 5px 0px; } }
@@ -7452,8 +7462,6 @@ input, textarea, button {
           margin-bottom: 0; } }
       .promo-icon li:last-child:after {
         display: none; }
-    .promo-icon li:nth-child(2n+2):after {
-      display: none; }
   .promo-icon__img {
     display: table-cell;
     vertical-align: bottom; }
@@ -8014,7 +8022,7 @@ input, textarea, button {
   z-index: 1; }
   @media (max-width: 1950px) {
     .float-ad {
-      top: 200px; } }
+      top: 320px; } }
   @media (max-width: 1050px) {
     .float-ad {
       display: none; } }

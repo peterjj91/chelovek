@@ -170,7 +170,7 @@
     left: 0;
 
     @media (min-width: $screen-mob) {
-      width: 42%;
+      //width: 42%;
     }
   }
 
@@ -333,6 +333,9 @@
       @media(max-width: $screen-mob){
         width: 50%;
       }
+      @media(max-width: 650px){
+        width: 100%;
+      }
 
       & > li {
         width: 456px;
@@ -354,6 +357,14 @@
         &:nth-child(2) {
           padding-left: 0;
         }
+      }
+
+      .header__list__text--phone {
+        margin-top: 32px;
+      }
+
+      .header__list__text:before {
+        top: 2px;
       }
     }
   }
@@ -432,6 +443,15 @@
       &--time {
         &:before {
           @include sprite($clock)
+        }
+      }
+
+      &--copyright {
+        &:before {
+          content: '©';
+          font-size: 25px;
+          top: -5px !important;
+          opacity: 0.5;
         }
       }
 

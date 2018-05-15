@@ -41,6 +41,7 @@
   &__top {
     background-image: url(../img/footer-top.jpg);
     background-size: contain;
+    text-align: center;
 
     @media(max-width: $screen-lg){
       padding: 5px 0px;
