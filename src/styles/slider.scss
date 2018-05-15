@@ -55,6 +55,13 @@
 .slider-many {
   padding: 0px 86px;
 
+  @media(max-width: $screen-lg){
+    padding: 0px 50px;
+  }
+  @media(max-width: 800px){
+    padding: 0px 30px;
+  }
+
   .slick-list {
 
   }
@@ -90,6 +97,10 @@
       border-width: 45px 22px 45px 0;
       border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
 
+      @media(max-width: 500px){
+        left: -15px;
+      }
+
       &:before {
         left: 0;
       }
@@ -99,6 +110,10 @@
       right: 0;
       border-width: 45px 0px 45px 22px;
       border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+
+      @media(max-width: 500px){
+        right: -15px;
+      }
 
       &:before {
         right: 0;
@@ -110,5 +125,6 @@
 
   .slick-slide {
     padding: 0px 22px;
+    text-align: center;
   }
 }

@@ -12,7 +12,7 @@
 </head>
 <body data-spy="scroll" data-target="#myNav">
 <div class="header">
-    <div class="promo-nav promo-nav--header">
+    <div class="promo-nav promo-nav--header" id="header-top">
         <div class="content__container">
             <ul class="promo-nav__breadcrumb">
                 <li>
@@ -117,9 +117,9 @@
                     </a>
 
                     <div class="header__slogan__wrapper">
-                        <div class="header__slogan"><strong>«Человек» — для человека</strong></div>
+                        <div class="header__slogan header__slogan--simple"><strong>«Человек» — для человека</strong></div>
 
-                        <div class="header__slogan header__slogan--big header__slogan--light"><i>Сохраняя здоровье - продлеваем радость жизни</i></div>
+                        <div class="header__slogan header__slogan--big header__slogan--light">Сохраняя здоровье - продлеваем радость жизни</div>
                     </div>
                 </div>
 
@@ -128,9 +128,9 @@
                         <li>
                             <ul class="header__list">
                                 <li>
-                                    <a href="tel:84959390727" class="header__list__text header__list__text--big header__list__text--phone">
+                                    <div class="header__list__text header__list__text--big header__list__text--phone">
                                         <strong>8 (495) 939 - 07 - 27</strong>
-                                    </a>
+                                    </div>
                                 </li>
 
                                 <li>
@@ -141,7 +141,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="mailto:info@chelovek.ru" class="header__list__text header__list__text--bright header__list__text--email">
+                                    <a href="mailto:info@chelovek.ru" class="header__list__text  header__list__text--email">
                                         info@chelovek.ru
                                     </a>
                                 </li>
@@ -185,10 +185,6 @@
         </div>
     </div>
 
-    <div class="header__burger">
-        <span class="toggle-menu mobile-menu"><span></span></span>
-    </div>
-
     <div class="header__nav" id="header-nav">
         <div class="header__container">
             <ul class="nav">
@@ -201,7 +197,7 @@
         </div>
     </div>
 
-    <div class="header__fix" id="myNav" data-spy="affix">
+    <div class="header__fix" data-spy="affix" id="myNav">
         <div class="content__container">
             <a href="#" class="header__fix__logo">
                 <img src="img/logo.png" alt="">
@@ -226,6 +222,10 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="header__burger">
+                <span class="toggle-menu mobile-menu" id="right-menu"><span></span></span>
+            </div>
         </div>
     </div>
 </div>
@@ -234,6 +234,10 @@
     <div class="content__container">
         <div class="promo-banner promo-banner--main">
             <img src="img/slide-2.jpg" class="promo-banner__img" alt="">
+
+            <div class="promo-banner__text">
+                <div class="head-h1">some text</div>
+            </div>
         </div>
 
         <ul class="promo-icon">
@@ -528,9 +532,9 @@
             <ul class="promo-news__list">
                 <li>
                     <div class="promo-news__item">
-                        <div class="promo-news__item__title">
+                        <a href="#" class="promo-news__item__title">
                             Профилактика гриппа
-                        </div>
+                        </a>
 
                         <div class="promo-news__item__description">
                             <p>Осенне-зимний период – это время разгара такого заболевания, как грипп, опасного тяжелыми осложнениями, угрожающими здоровью и жизни. Осенне-зимний период – это время разгараОсенне-зимний период – это время разгара такого заболевания, как грипп, опасного тяжелыми </p>
@@ -540,9 +544,9 @@
 
                 <li>
                     <div class="promo-news__item">
-                        <div class="promo-news__item__title">
+                        <a href="#" class="promo-news__item__title">
                             Профилактика гриппа
-                        </div>
+                        </a>
 
                         <div class="promo-news__item__description">
                             <p>Осенне-зимний период – это время разгара такого заболевания, как грипп, опасного тяжелыми осложнениями, угрожающими здоровью и жизни. Осенне-зимний период – это время разгараОсенне-зимний период – это время разгара такого заболевания, как грипп, опасного тяжелыми </p>
@@ -552,9 +556,9 @@
 
                 <li>
                     <div class="promo-news__item">
-                        <div class="promo-news__item__title">
+                        <a href="#" class="promo-news__item__title">
                             Профилактика гриппа
-                        </div>
+                        </a>
 
                         <div class="promo-news__item__description">
                             <p>Осенне-зимний период – это время разгара такого заболевания, как грипп, опасного тяжелыми осложнениями, угрожающими здоровью и жизни. Осенне-зимний период – это время разгараОсенне-зимний период – это время разгара такого заболевания, как грипп, опасного тяжелыми </p>
@@ -649,7 +653,7 @@
                     <ul class="header__info header__info--footer">
                         <li>
                             <ul class="header__list">
-                                <li><div class="header__list__text">&nbsp;</div></li>
+                                <li class="hidden-sm"><div class="header__list__text">&nbsp;</div></li>
 
                                 <li>
                                     <div class="header__list__text header__list__text--time">
@@ -669,9 +673,9 @@
                         <li>
                             <ul class="header__list">
                                 <li>
-                                    <a href="tel:84959390727" class="header__list__text header__list__text--big header__list__text--phone">
+                                    <div class="header__list__text header__list__text--big header__list__text--phone">
                                         <strong>8 (495) 939 - 07 - 27</strong>
-                                    </a>
+                                    </div>
                                 </li>
 
                                 <li>

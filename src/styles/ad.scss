@@ -1,8 +1,14 @@
 .float-ad {
   position: fixed;
   top: 390px;
-  right: 0;
+  right: -60px;
   z-index: 1;
+  @media(max-width: $screen-lg){
+    top: 200px;
+  }
+  @media (max-width: $screen-mob) {
+    display: none;
+  }
 
   &__btn {
     display: table;
@@ -17,6 +23,12 @@
     margin-bottom: 15px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
 
+    @media(max-width: $screen-lg){
+      width: 240px;
+      height: 80px;
+      font-size: 20px;
+    }
+
     &:hover, &:focus {
       text-decoration: none;
       color: white;
@@ -26,6 +38,7 @@
       border-radius: 10px;
       display: table-cell;
       vertical-align: middle;
+      padding-right: 50px;
     }
 
     &--orange {

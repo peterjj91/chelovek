@@ -12,21 +12,21 @@ $screen-phone:               $screen-xs-min;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  700px;
+$screen-sm:                  1050px;
 $screen-sm-min:              $screen-sm;
 //** Deprecated `$screen-tablet` as of v3.0.1
 $screen-tablet:              $screen-sm-min;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  1030px;
+$screen-md:                  1390px;
 $screen-md-min:              $screen-md;
 //** Deprecated `$screen-desktop` as of v3.0.1
 $screen-desktop:             $screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  1250px;
+$screen-lg:                  1630px;
 $screen-lg-min:              $screen-lg;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 $screen-lg-desktop:          $screen-lg-min;
@@ -60,7 +60,7 @@ $container-tablet:             (100%);
 $container-sm:                 $container-tablet;
 
 // Medium screen / desktop
-$container-desktop:            (100%);
+$container-desktop:            1360px + $grid-gutter-width;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop;
 
@@ -68,6 +68,9 @@ $container-md:                 $container-desktop;
 $container-large-desktop:      1600px + $grid-gutter-width;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop;
+
+
+$screen-mob: 1050px;
 
 $cambria: Cambria;
 $cambria-italic: Cambria-Italic;

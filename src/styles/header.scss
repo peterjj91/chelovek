@@ -1,43 +1,85 @@
 .header {
-  //position: absolute;
-  //z-index: 1;
-  //top: 0;
-  //left: 0;
   width: 100%;
   padding: 0;
 
-  @media (max-width: $screen-md-min) {
-    padding-top: 26px;
+  @media (max-width: $screen-mob) {
+    height: 50px;
   }
 
   &__fix {
-    background-color: white;
     position: fixed;
+    top: 0;
+    width: 100%;
     opacity: -1;
+    background-color: white;
     height: 81px;
     padding: 10px 0px 10px 0px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    transform: translateY(-95px);
+    transition: all .2s ease-in-out;
+    display: block;
+
+    @media(max-width: $screen-lg){
+      height: 60px;
+      transform: translateY(-75px);
+    }
+    @media(max-width: $screen-lg){
+      height: 58px;
+      transform: translateY(-73px);
+    }
+    @media(max-width: $screen-mob){
+      transform: none;
+      opacity: 1;
+      z-index: 1;
+    }
 
     &.affix {
       width: 100%;
       z-index: 2;
-      position: fixed;
       display: block;
-      top: 0;
       opacity: 1;
+      transform: translateY(0px);
+    }
+
+    .content__container {
+      position: relative;
+
+      @media(max-width: $screen-mob){
+        height: 39px;
+      }
     }
 
     &__logo {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 50px;
+      position: absolute;
+      left: 15px;
+      top: 0px;
+
+      @media(max-width: $screen-mob){
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+      }
+
+      img {
+        @media(max-width: $screen-lg){
+          width: 42px;
+        }
+      }
     }
 
     &__nav {
-      display: inline-block;
-      vertical-align: middle;
+      display: block;
       font-family: $cambria-bold;
       letter-spacing: 3px;
+      text-align: center;
+      padding: 10px 0px 0px 0px;
+      @media(max-width: $screen-lg){
+        padding-top: 4px;
+      }
+      @media(max-width: $screen-sm){
+        padding-top: 8px;
+      }
 
       li {
         a {
@@ -45,6 +87,16 @@
           padding: 0;
           font-size: 27px;
           text-decoration: none;
+          text-transform: uppercase;
+
+          @media(max-width: $screen-lg){
+            letter-spacing: 2px;
+            font-size: 22px;
+          }
+          @media(max-width: $screen-sm){
+            letter-spacing: 0px;
+            font-size: 18px;
+          }
 
           &:hover, &:focus {
             color: #408146;
@@ -71,15 +123,45 @@
   &__content {
     padding: 19px 0px 0px 0px;
     position: relative;
+    height: 258px;
+
+    @media(max-width: $screen-lg){
+      height: 220px;
+    }
+    @media(max-width: $screen-md){
+      height: 220px;
+    }
+    @media(max-width: $screen-sm){
+      height: 190px;
+    }
   }
 
   &__burger {
     display: none;
     position: absolute;
+    top: 8px;
+    right: 15px;
+
+    @media (max-width: $screen-mob) {
+      display: block;
+    }
   }
 
   &__main {
     height: 258px;
+
+    @media(max-width: $screen-lg){
+      height: 230px;
+    }
+    @media(max-width: $screen-lg){
+      height: 220px;
+    }
+    @media(max-width: $screen-sm){
+      height: 190px;
+    }
+    @media(max-width: $screen-mob){
+      display: none;
+    }
   }
 
   &__side {
@@ -95,6 +177,27 @@
     vertical-align: bottom;
     margin-right: 132px;
     color: #383838;
+    @media(max-width: $screen-lg){
+      letter-spacing: normal;
+      margin-right: 0;
+    }
+
+    &__wrapper {
+      margin-top: -9px;
+      padding-left: 17px;
+
+      @media(max-width: $screen-lg){
+        padding-left: 230px;
+        margin-top: 0px;
+      }
+      @media(max-width: $screen-md){
+        margin-top: 0;
+      }
+      @media(max-width: $screen-sm){
+        display: none;
+        padding-left: 0;
+      }
+    }
 
     &--light {
       color: #408146;
@@ -104,11 +207,19 @@
     &--big {
       font-size: 27px;
       letter-spacing: 1.4px;
+      @media(max-width: $screen-lg){
+        letter-spacing: normal;
+        font-size: 22px;
+      }
+      @media(max-width: $screen-md){
+        font-size: 20px;
+      }
     }
 
-    &__wrapper {
-      margin-top: -9px;
-      padding-left: 17px;
+    &--simple {
+      @media(max-width: $screen-lg){
+        display: none;
+      }
     }
   }
 
@@ -117,12 +228,26 @@
     vertical-align: top;
     height: 209px;
     overflow: hidden;
+    @media(max-width: $screen-lg){
+      height: 180px;
+    }
+
+    img {
+      width: 150px;
+      height: 188px;
+      vertical-align: top;
+    }
 
     &__icon {
       margin-top: 32px;
       margin-left: 47px;
       width: 150px;
       height: 189px;
+
+      @media(max-width: $screen-lg){
+        margin-top: 20px;
+        margin-left: 0px;
+      }
     }
   }
 
@@ -130,11 +255,26 @@
     list-style: none;
     margin: 0;
     font-size: 0;
+    @media(max-width: $screen-lg){
+      padding: 0;
+    }
 
     &__wrapper {
       display: inline-block;
       vertical-align: top;
       margin: 0px 0px 0px 280px;
+
+      @media(max-width: $screen-lg){
+        margin-left: 230px;
+        margin-top: 10px;
+      }
+      @media(max-width: $screen-sm){
+        float: right;
+        margin: 20px 0px 0px 0px;
+      }
+      @media(max-width: $screen-mob){
+        display: none;
+      }
     }
 
     & > li {
@@ -142,7 +282,13 @@
       vertical-align: top;
       width: 410px;
       position: relative;
-      //margin-right: -25px;
+
+      @media(max-width: $screen-lg){
+        width: 350px;
+      }
+      @media(max-width: $screen-sm){
+        width: 300px;
+      }
 
       &:first-child {
         &:after {
@@ -153,6 +299,10 @@
           background-color: rgba(0, 0, 0, 0.5);
           width: 1px;
           height: 138px;
+
+          @media(max-width: $screen-sm){
+            height: 100%;
+          }
         }
       }
 
@@ -167,10 +317,26 @@
       vertical-align: top;
       padding: 0px 15px;
       margin-top: -18px;
+      @media(max-width: $screen-lg){
+        margin-top: 0;
+      }
+      @media(max-width: $screen-sm){
+        padding-left: 0;
+        padding-right: 0;
+      }
 
       & > li {
         width: 456px;
         margin-bottom: 25px;
+
+        @media(max-width: $screen-lg){
+          width: auto;
+          padding-right: 40px;
+        }
+        @media(max-width: $screen-sm){
+          width: 100%;
+          padding-right: 0;
+        }
 
         &:after {
           display: none;
@@ -189,6 +355,9 @@
 
     li {
       margin-bottom: 24px;
+      @media(max-width: $screen-lg){
+        margin-bottom: 15px;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -202,6 +371,13 @@
       color: #383838;
       position: relative;
       line-height: normal;
+      @media(max-width: $screen-lg){
+        font-size: 19px;
+        letter-spacing: normal;
+      }
+      @media(max-width: $screen-md){
+        font-size: 17px;
+      }
 
       &:hover, &:focus {
         color: #000;
@@ -213,11 +389,25 @@
         position: absolute;
         top: 8px;
         left: 0;
+        @media(max-width: $screen-lg){
+          top: 4px;
+        }
+        @media(max-width: $screen-lg){
+          top: 0;
+        }
       }
 
       &--big {
         font-size: 29px;
         letter-spacing: 2px;
+
+        @media(max-width: $screen-lg){
+          letter-spacing: normal;
+          font-size: 25px;
+        }
+        @media(max-width: $screen-md){
+          font-size: 20px;
+        }
       }
 
       &--height {
@@ -237,6 +427,12 @@
       }
 
       &--email {
+        color: #e18c44;
+
+        &:hover, &:focus {
+          color: rgba(225, 140, 68, 0.7);
+        }
+
         &:before {
           @include sprite($at)
         }
@@ -255,14 +451,6 @@
           @include sprite($subway)
         }
       }
-
-      &--bright {
-        color: #e18c44;
-
-        &:hover, &:focus {
-          color: #e18c44;
-        }
-      }
     }
 
     p {
@@ -274,11 +462,21 @@
   &__slider {
     position: absolute;
     top: 0px;
-    right: 20px;
+    right: 0px;
     overflow: hidden;
     z-index: -1;
     width: 35.4%;
     height: 258px;
+    @media(max-width: $screen-lg){
+      height: 220px;
+      width: 557px;
+    }
+    @media(max-width: $screen-md){
+      right: -15px;
+    }
+    @media(max-width: $screen-sm){
+      display: none;
+    }
 
     &:before {
       content: '';
@@ -304,6 +502,15 @@
     text-align: center;
     text-transform: uppercase;
 
+    @media(max-width: $screen-lg){
+      padding-top: 15px;
+      padding-bottom: 11px;
+      border-width: 3px;
+    }
+    @media(max-width: $screen-mob){
+      display: none;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -312,6 +519,10 @@
       width: 100%;
       height: 2px;
       background-color: #009146;
+
+      @media(max-width: $screen-lg){
+        top: 3px;
+      }
     }
   }
 }
@@ -365,6 +576,15 @@
   font-family: $cambria-bold;
   letter-spacing: 3px;
 
+  @media(max-width: $screen-lg){
+    letter-spacing: 2px;
+    font-size: 22px;
+  }
+  @media(max-width: $screen-md){
+    letter-spacing: 0px;
+    font-size: 18px;
+  }
+
   li {
     display: inline-block;
     margin: 0px 27px;
@@ -374,7 +594,7 @@
       padding: 0;
 
       &:hover, &:focus {
-        color: #408146;
+        color: rgba(64, 129, 70, 0.6);
         background-color: transparent;
       }
     }

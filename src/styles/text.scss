@@ -3,18 +3,19 @@
   line-height: normal;
   letter-spacing: 2px;
 
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-lg) {
     font-size: 30px;
+    letter-spacing: 1px;
   }
-  @media (max-width: $screen-sm) {
-    font-size: 33px;
+  @media (max-width: $screen-lg) {
+
   }
 }
 
 .head-h2 {
   font-size: 24px;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-lg) {
     font-size: 19px;
   }
 }
@@ -22,7 +23,7 @@
 .head-h3 {
   font-size: 21px;
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-lg) {
     font-size: 20px;
   }
 }

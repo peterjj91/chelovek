@@ -28585,19 +28585,25 @@ $(document).ready(function() {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1630,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 1300,
                 settings: {
                     slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -28647,7 +28653,9 @@ $(document).mouseup(function (e){
 $(document).ready(function(){
     $("#myNav").affix({
         offset: {
-            top: $(".header").outerHeight(true)
+            top: (
+                $('#header-top').outerHeight(true) +
+                $('.header__main').outerHeight(true))
         }
     });
 });
