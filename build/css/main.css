@@ -6692,19 +6692,19 @@ input, textarea, button {
         .header__fix .content__container {
           height: 39px; } }
     .header__fix__logo {
+      display: none;
       position: absolute;
-      left: 15px;
-      top: -8px;
+      transform: translate(-50%, 0%);
+      left: 50%;
+      top: 10px;
       z-index: 1; }
       @media (max-width: 1950px) {
         .header__fix__logo {
           top: -4px; } }
       @media (max-width: 1050px) {
         .header__fix__logo {
-          position: absolute;
-          transform: translate(-50%, 0%);
-          left: 50%;
-          top: 10px; } }
+          top: 10px;
+          display: block; } }
       @media (max-width: 1950px) {
         .header__fix__logo img {
           width: 42px; } }
@@ -7179,8 +7179,7 @@ input, textarea, button {
 
 .navbar {
   border: none;
-  background-color: transparent;
-  padding-left: 50px; }
+  background-color: transparent; }
   @media (max-width: 1050px) {
     .navbar {
       padding-left: 0;
@@ -7196,7 +7195,7 @@ input, textarea, button {
       .navbar-default .navbar-nav li:last-child {
         margin-right: 0; } }
     .navbar-default .navbar-nav li a {
-      color: #408146;
+      color: #306F35;
       padding: 0;
       text-transform: uppercase; }
       @media (max-width: 1050px) {
@@ -7204,10 +7203,11 @@ input, textarea, button {
           padding: 10px 0px 10px 0px;
           text-align: center; } }
       .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus {
-        color: #408146;
+        color: #306F35;
         opacity: 0.5; }
     .navbar-default .navbar-nav li.dropdown .dropdown-menu {
-      margin-top: 16px; }
+      margin-top: 16px;
+      background-color: rgba(255, 255, 255, 0.8); }
       @media (max-width: 1050px) {
         .navbar-default .navbar-nav li.dropdown .dropdown-menu {
           margin-top: 0px;
@@ -7499,7 +7499,8 @@ input, textarea, button {
       .promo-nav__breadcrumb li:last-child {
         margin-right: 0; }
     .promo-nav__breadcrumb a {
-      color: #383838; }
+      color: #383838;
+      font-family: Cambria-Bold; }
       .promo-nav__breadcrumb a:hover, .promo-nav__breadcrumb a:focus {
         color: #383838;
         text-decoration: none;
