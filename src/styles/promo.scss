@@ -15,9 +15,9 @@
 
   &__text {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    top: 10%;
+    //transform: translate(-50%, -50%);
     padding: 5px 20px 10px 20px;
     background: white;
   }
@@ -26,7 +26,7 @@
     margin-bottom: 10px;
 
     @media(max-width: $screen-lg){
-      margin-bottom: 50px;
+      //margin-bottom: 50px;
     }
     @media(max-width: $screen-md){
       margin-left: -15px;
@@ -139,7 +139,7 @@
       padding-left: 0;
     }
     @media(max-width: $screen-mob){
-      display: none;
+      //display: none;
     }
 
     li {
@@ -190,7 +190,7 @@
     .promo-nav {
       &__breadcrumb {
         a {
-          color: #408146;
+          color: #306F35;
         }
       }
     }
@@ -204,7 +204,7 @@
   text-align: center;
 
   @media(max-width: $screen-lg){
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
   }
 
   li {
@@ -442,7 +442,7 @@
   padding: 0px 0px 22px 0px;
   @media(max-width: $screen-lg){
     padding-top: 22px;
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
   }
 
   &__title {
@@ -633,7 +633,7 @@
     margin-bottom: 24px;
 
     @media(max-width: $screen-lg){
-      margin-bottom: 50px;
+      //margin-bottom: 50px;
     }
   }
 }
