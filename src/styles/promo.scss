@@ -133,6 +133,7 @@
     margin: 0;
     font-size: 18px;
     letter-spacing: 1.6px;
+    text-transform: uppercase;
     @media(max-width: $screen-lg){
       letter-spacing: normal;
       font-size: 16px;

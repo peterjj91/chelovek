@@ -7232,7 +7232,8 @@ input, textarea, button {
     border: none;
     box-shadow: none; }
   .navbar-nav {
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
     @media (max-width: 1300px) {
       .navbar-nav {
         text-align: right; } }
@@ -7486,7 +7487,8 @@ input, textarea, button {
     padding-left: 21px;
     margin: 0;
     font-size: 18px;
-    letter-spacing: 1.6px; }
+    letter-spacing: 1.6px;
+    text-transform: uppercase; }
     @media (max-width: 1950px) {
       .promo-nav__breadcrumb {
         letter-spacing: normal;
