@@ -56,17 +56,16 @@
     &__logo {
       display: none;
       position: absolute;
-      transform: translate(-50%, 0%);
-      left: 50%;
-      top: 10px;
+      left: 10px;
       z-index: 1;
 
       @media(max-width: $screen-lg){
         top: -4px;
       }
       @media(max-width: $screen-mob){
+        transform: translate(-50%, 0%);
+        left: 50%;
         top: 10px;
-        display: block;
       }
 
       img {
@@ -605,6 +604,12 @@
       @media(max-width: $screen-mob){
         padding: 0;
         box-shadow: none;
+      }
+
+      .header__fix {
+        &__logo {
+          display: block;
+        }
       }
 
       &:before {

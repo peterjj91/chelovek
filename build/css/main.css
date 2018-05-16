@@ -6694,17 +6694,16 @@ input, textarea, button {
     .header__fix__logo {
       display: none;
       position: absolute;
-      transform: translate(-50%, 0%);
-      left: 50%;
-      top: 10px;
+      left: 10px;
       z-index: 1; }
       @media (max-width: 1950px) {
         .header__fix__logo {
           top: -4px; } }
       @media (max-width: 1050px) {
         .header__fix__logo {
-          top: 10px;
-          display: block; } }
+          transform: translate(-50%, 0%);
+          left: 50%;
+          top: 10px; } }
       @media (max-width: 1950px) {
         .header__fix__logo img {
           width: 42px; } }
@@ -7115,6 +7114,8 @@ input, textarea, button {
         .header__nav.affix {
           padding: 0;
           box-shadow: none; } }
+      .header__nav.affix .header__fix__logo {
+        display: block; }
       .header__nav.affix:before {
         background-color: transparent; }
 
