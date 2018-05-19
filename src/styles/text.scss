@@ -35,3 +35,9 @@ strong {
 p {
   font-size: 20px;
 }
+
+.text {
+  &--promo {
+    color: #408146;
+  }
+}

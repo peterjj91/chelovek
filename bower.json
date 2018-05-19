@@ -23,6 +23,7 @@
     "bootstrap-sass": "^3.3.7",
     "sidr": "^2.2.1",
     "slideout.js": "^1.0.1",
-    "bootstrap-select": "^1.12.4"
+    "bootstrap-select": "^1.12.4",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
   }
 }

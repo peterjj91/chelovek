@@ -1,50 +1,52 @@
+
 input, textarea, button {
   outline: none;
 }
 
 .textarea {
-  border-radius: 4px;
-  border: 1px solid rgba(151, 151, 151, 0.41);
-  color: grey;
-  padding: 9px 15px 9px 14px;
+  border-radius: 0px;
+  border: 1px solid #bfbfbf;
+  color: black;
+  padding: 4px 15px 4px 14px;
   font-size: 17px;
   resize: none;
+  vertical-align: top;
 
   &::-webkit-input-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
   &::-moz-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
   &:-ms-input-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
   &:-moz-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
 }
 
 .input {
-  border-radius: 4px;
-  border: 1px solid rgba(151, 151, 151, 0.41);
-  color: grey;
-  padding: 9px 15px 9px 14px;
+  border-radius: 0px;
+  border: 1px solid #bfbfbf;
+  color: black;
+  padding: 4px 15px 4px 14px;
   font-size: 17px;
+  vertical-align: top;
 
   &::-webkit-input-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
   &::-moz-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
   &:-ms-input-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
   &:-moz-placeholder {
-    color: grey;
+    color: #bfbfbf;
   }
 }
-
 
 .styled-checkbox {
   position: absolute; // take it out of document flow
@@ -158,3 +160,39 @@ input, textarea, button {
   }
 }
 
+.input-group {
+  .form-control {
+    border-radius: 0px;
+  }
+
+  .input-group-addon {
+
+  }
+}
+
+
+.form-control {
+  box-shadow: none;
+
+  &:hover, &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #bfbfbf;
+  }
+}
+
+.input-group-addon {
+  background-color: transparent;
+  border: none;
+}
+
+
+.bootstrap-datetimepicker-widget {
+  width: auto !important;
+
+  a[data-action] {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 42px !important;
+  }
+}

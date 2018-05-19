@@ -3,16 +3,15 @@
   border: none;
 
   .dropdown-toggle {
-    padding: 11px 35px 9px 12px;
+    padding: 7px 55px 6px 12px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 0px;
     border: 1px solid rgba(151, 151, 151, 0.5) !important;
-    //font-family: @AvenirNextW1G-Regular;
-    color: black !important;
+    color: #bfbfbf !important;
 
     &:hover {
       background-color: white;
-      color: black !important;
+      color: #bfbfbf !important;
     }
 
     &:focus {
@@ -20,38 +19,36 @@
       background-color: white;
     }
 
+    .bs-caret {
+      position: absolute;
+      top: 4px;
+      right: 0px;
+      width: 42px;
+      height: 24px;
+      border-left: 1px solid #bfbfbf;
+    }
+
     .caret {
-      margin-top: -4px !important;
+      @include sprite($arrow-down-black);
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
       border: none;
-      width: 14px;
-      height: 8px;
+      margin-top: 0px;
 
       &:before, &:after {
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 14px;
-        height: 1px;
-        background-color: #979797;
-      }
-
-      &:before {
-        left: -4.5px;
-        transform: rotate(45deg);
-      }
-
-      &:after {
-        right: -4.5px;
-        transform: rotate(-45deg);
+        display: none;
       }
     }
   }
 
   .dropdown-menu {
-    margin: 13px 0px 0px;
-    padding: 15px 0px 19px 0px;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    margin: 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
     border: none;
+    border-radius: 0px;
     max-height: none !important;
     @media(max-width: $screen-xs){
       max-width: 100%;
@@ -67,7 +64,7 @@
       a {
         //font-family: @AvenirNextW1G-Regular;
         outline: none;
-        font-size: 16px;
+        font-size: 17px;
         padding: 3px 16px;
       }
     }
@@ -115,7 +112,17 @@
     .dropdown-toggle {
       background-color: white !important;
       box-shadow: none;
-      color: #000 !important;
+      color: #bfbfbf !important;
+
+      .bs-caret {
+        transform: scale(-1);
+        border-left: none;
+        border-right: 1px solid #bfbfbf;
+      }
+
+      .caret {
+        margin-left: -1px;
+      }
     }
   }
 

@@ -62,10 +62,6 @@
     padding: 0px 30px;
   }
 
-  .slick-list {
-
-  }
-
   .slick-arrow {
     position: absolute;
     top: 75px;
@@ -125,6 +121,72 @@
 
   .slick-slide {
     padding: 0px 22px;
+    text-align: center;
+  }
+}
+
+.slider-doctor {
+  padding: 0px 55px;
+
+  .slick-arrow {
+    position: absolute;
+    top: 75px;
+    //margin-top: -45px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    font-size: 0;
+    background-color: transparent;
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transition: opacity .15s linear;
+      }
+    }
+
+    &:before {
+      content: '';
+      opacity: -1;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      @include sprite($shadow);
+    }
+
+    &.slick-prev {
+      left: 0;
+      border-width: 45px 22px 45px 0;
+      border-color: transparent rgba(0, 0, 0, 0.5) transparent transparent;
+
+      @media(max-width: 500px){
+        left: -15px;
+      }
+
+      &:before {
+        left: 0;
+      }
+    }
+
+    &.slick-next {
+      right: 0;
+      border-width: 45px 0px 45px 22px;
+      border-color: transparent transparent transparent rgba(0, 0, 0, 0.5);
+
+      @media(max-width: 500px){
+        right: -15px;
+      }
+
+      &:before {
+        right: 0;
+        transform: scalex(-1);
+        top: -60px;
+      }
+    }
+  }
+
+  .slick-slide {
+    padding: 0;
     text-align: center;
   }
 }

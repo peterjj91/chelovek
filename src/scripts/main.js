@@ -41,6 +41,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('.slider-doctor').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+
+$(document).ready(function() {
     $('.slider-mini').slick({
         arrows: false,
         dots: false,
@@ -85,5 +93,43 @@ $(document).ready(function(){
                 $('#header-top').outerHeight(true) +
                 $('.header__main').outerHeight(true))
         }
+    });
+});
+
+$(document).ready(function() {
+    $('.promo-card__topic__more').click(function () {
+        $(this).parent('.promo-card__topic__list__wrapper').addClass('promo-card__topic__list__wrapper--active');
+        $(this).addClass('promo-card__topic__more--hidden')
+    });
+});
+
+$(document).ready(function() {
+    $('.datetimepicker-date').datetimepicker({
+        locale: 'ru',
+        format: "L"
+    });
+});
+
+$(document).ready(function() {
+    $('.datetimepicker-time').datetimepicker({
+        locale: 'ru',
+        format: 'LT'
+    });
+});
+
+$(document).ready(function() {
+    $('#datetimepicker6').datetimepicker({
+        useCurrent: false,
+        format:'HH:mm',
+    });
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false,
+        format:'HH:mm'
+    });
+    $("#datetimepicker6").on("dp.change", function (e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+    $("#datetimepicker7").on("dp.change", function (e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
     });
 });
