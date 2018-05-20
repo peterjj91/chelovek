@@ -35,6 +35,7 @@
     //background: #FF7F00;
     //white-space: normal;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+    transition: all .1s ease-in-out;
 
     &:hover, &:focus {
       color: white;
@@ -45,6 +46,7 @@
       padding: 9px 16px 10px 16px;
       border-radius: 10px;
       display: block;
+      transition: all .1s ease-in-out;
     }
 
     &--orange {
@@ -53,6 +55,12 @@
       .btn__main__inside {
         background-color: #e18c44;
       }
+
+      &:hover, &:focus {
+        .btn__main__inside {
+          background-color: rgba(225, 140, 68, 0.7);
+        }
+      }
     }
 
     &--green {
@@ -60,6 +68,12 @@
 
       .btn__main__inside {
         background-color: #408146;
+      }
+
+      &:hover, &:focus {
+        .btn__main__inside {
+          background-color: rgba(64, 129, 70, 0.7);
+        }
       }
     }
   }

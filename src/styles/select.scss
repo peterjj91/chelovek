@@ -7,16 +7,22 @@
     font-size: 16px;
     border-radius: 0px;
     border: 1px solid rgba(151, 151, 151, 0.5) !important;
-    color: #bfbfbf !important;
+    //color: #bfbfbf !important;
+    color: black !important;
 
     &:hover {
       background-color: white;
-      color: #bfbfbf !important;
+      //color: #bfbfbf !important;
+      color: black !important;
     }
 
     &:focus {
       outline: 0px auto -webkit-focus-ring-color !important;
       background-color: white;
+    }
+
+    &[aria-expanded="false"] {
+
     }
 
     .bs-caret {
@@ -112,7 +118,8 @@
     .dropdown-toggle {
       background-color: white !important;
       box-shadow: none;
-      color: #bfbfbf !important;
+      //color: #bfbfbf !important;
+      color: black !important;
 
       .bs-caret {
         transform: scale(-1);

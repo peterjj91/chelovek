@@ -13,6 +13,12 @@ $(document).ready(function() {
         slidesToScroll: 1,
         responsive: [
             {
+                breakpoint: 1950,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
                 breakpoint: 1630,
                 settings: {
                     slidesToShow: 4,
@@ -25,7 +31,7 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 900,
                 settings: {
                     slidesToShow: 2,
                 }
@@ -106,7 +112,8 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.datetimepicker-date').datetimepicker({
         locale: 'ru',
-        format: "L"
+        format: "L",
+        minDate: moment()
     });
 });
 
@@ -118,18 +125,22 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('#datetimepicker6').datetimepicker({
+    $('.datetimepicker6').datetimepicker({
         useCurrent: false,
         format:'HH:mm',
+        minDate: moment({h:8}),
+        maxDate: moment({h:22})
     });
-    $('#datetimepicker7').datetimepicker({
+    $('.datetimepicker7').datetimepicker({
         useCurrent: false,
-        format:'HH:mm'
+        format:'HH:mm',
+        minDate: moment({h:8}),
+        maxDate: moment({h:22})
     });
-    $("#datetimepicker6").on("dp.change", function (e) {
-        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    $(".datetimepicker6").on("dp.change", function (e) {
+        $('.datetimepicker7').data("DateTimePicker").minDate(e.date);
     });
-    $("#datetimepicker7").on("dp.change", function (e) {
-        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    $(".datetimepicker7").on("dp.change", function (e) {
+        $('.datetimepicker6').data("DateTimePicker").maxDate(e.date);
     });
 });

@@ -23,11 +23,18 @@
     display: table;
     width: 190px;
     height: 80px;
+    white-space: normal;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &__inside {
       display: table-cell;
       vertical-align: middle;
-      font-size: 20px;
+      padding: 0px 60px 0px 10px;
+      font-size: 16px;
       line-height: normal;
     }
   }

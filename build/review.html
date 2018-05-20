@@ -634,7 +634,9 @@
                     </div>
 
                     <div class="promo-comment__description">
-                        <input type="text" class="input" placeholder="">
+                        <div class="promo-comment__col promo-comment__col--middle">
+                            <input type="text" class="input" placeholder="">
+                        </div>
                     </div>
                 </div>
 
@@ -644,7 +646,13 @@
                     </div>
 
                     <div class="promo-comment__description">
-                        <textarea class="textarea" placeholder="О клинике"></textarea>
+                        <div class="promo-comment__col promo-comment__col--middle">
+                            <select class="selectpicker" title="О клинике">
+                                <option value="">Что-то</option>
+                                <option value="">Где-то</option>
+                                <option value="">Кто</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
@@ -654,13 +662,27 @@
                     </div>
 
                     <div class="promo-comment__description">
-                        <input type="text" class="input" placeholder="О клинике">
+                        <textarea rows="10" class="textarea" placeholder="О клинике"></textarea>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="promo-service promo-service--main">
+        <ul class="promo-discount">
+            <li>
+                <div class="promo-discount__item">
+                    <img src="img/discount-img2.jpg" alt="">
+                </div>
+            </li>
+
+            <li>
+                <div class="promo-discount__item">
+                    <img src="img/discount-img2.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+
+        <div class="promo-service promo-service--promo">
             <div class="promo-service__item">
                 <div class="head-h1 promo-service__title">Специалисты</div>
 
@@ -707,20 +729,6 @@
                 </ul>
             </div>
         </div>
-
-        <ul class="promo-discount">
-            <li>
-                <div class="promo-discount__item">
-                    <img src="img/discount-img2.jpg" alt="">
-                </div>
-            </li>
-
-            <li>
-                <div class="promo-discount__item">
-                    <img src="img/discount-img2.jpg" alt="">
-                </div>
-            </li>
-        </ul>
 
     </div>
 </div>
@@ -853,17 +861,25 @@
 
 
 <div class="float-ad">
-    <a href="#" class="float-ad__btn float-ad__btn--orange">
-        <div class="float-ad__btn__inside">
-            Записаться на прием
-        </div>
+    <a href="#" class="btn btn__main btn__main--orange">
+        <span class="btn__main__inside">Записаться на прием</span>
     </a>
 
-    <a href="#" class="float-ad__btn float-ad__btn--green">
-        <div class="float-ad__btn__inside">
-            Акции
-        </div>
+    <a href="#" class="btn btn__main btn__main--green">
+        <span class="btn__main__inside">Акции</span>
     </a>
+
+    <!--<a href="#" class="float-ad__btn float-ad__btn&#45;&#45;orange">-->
+        <!--<div class="float-ad__btn__inside">-->
+            <!--Записаться на прием-->
+        <!--</div>-->
+    <!--</a>-->
+
+    <!--<a href="#" class="float-ad__btn float-ad__btn&#45;&#45;green">-->
+        <!--<div class="float-ad__btn__inside">-->
+            <!--Акции-->
+        <!--</div>-->
+    <!--</a>-->
 </div>
 </body>
 </html>

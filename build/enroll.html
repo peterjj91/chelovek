@@ -588,7 +588,7 @@
                     <div class="promo-comment__description">
                         <div class="promo-comment__col promo-comment__col--middle">
                             <div class="input-group date datetimepicker-date">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control datetimepicker-date">
 
                                 <span class="input-group-addon">
                                     <span class="icon icon__calendar"></span>
@@ -606,8 +606,8 @@
                     <div class="promo-comment__description">
                         <div class="promo-comment__col promo-comment__col--mini">
                             <div class="form-group">
-                                <div class='input-group date' id='datetimepicker6'>
-                                    <input type='text' class="form-control" />
+                                <div class='input-group date datetimepicker6'>
+                                    <input type='text' class="form-control datetimepicker6" />
                                     <span class="input-group-addon">
                                         <span class="icon icon__clock-grey"></span>
                                     </span>
@@ -617,8 +617,8 @@
 
                         <div class="promo-comment__col promo-comment__col--mini">
                             <div class="form-group">
-                                <div class='input-group date' id='datetimepicker7'>
-                                    <input type='text' class="form-control" />
+                                <div class='input-group date datetimepicker7'>
+                                    <input type='text' class="form-control datetimepicker7" />
                                     <span class="input-group-addon">
                                         <span class="icon icon__clock-grey"></span>
                                     </span>
@@ -729,6 +729,24 @@
 
                 <div class="promo-comment__row">
                     <div class="promo-comment__promo">
+                        <div class="head-h2">Телефон</div>
+                    </div>
+
+                    <div class="promo-comment__description">
+                        <div class="promo-comment__col promo-comment__col--middle">
+                            <div class='input-group date'>
+                                <input type="text" class="input" placeholder="">
+
+                                <span class="input-group-addon" style="opacity: 0; pointer-events: none;">
+                                    <span class="icon icon__clock-grey"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-comment__row">
+                    <div class="promo-comment__promo">
 
                     </div>
 
@@ -749,7 +767,21 @@
             </div>
         </div>
 
-        <div class="promo-service promo-service--main">
+        <ul class="promo-discount">
+            <li>
+                <div class="promo-discount__item">
+                    <img src="img/discount-img2.jpg" alt="">
+                </div>
+            </li>
+
+            <li>
+                <div class="promo-discount__item">
+                    <img src="img/discount-img2.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+
+        <div class="promo-service promo-service--promo">
             <div class="promo-service__item">
                 <div class="head-h1 promo-service__title">Специалисты</div>
 
@@ -796,20 +828,6 @@
                 </ul>
             </div>
         </div>
-
-        <ul class="promo-discount">
-            <li>
-                <div class="promo-discount__item">
-                    <img src="img/discount-img2.jpg" alt="">
-                </div>
-            </li>
-
-            <li>
-                <div class="promo-discount__item">
-                    <img src="img/discount-img2.jpg" alt="">
-                </div>
-            </li>
-        </ul>
 
     </div>
 </div>
@@ -942,17 +960,25 @@
 
 
 <div class="float-ad">
-    <a href="#" class="float-ad__btn float-ad__btn--orange">
-        <div class="float-ad__btn__inside">
-            Записаться на прием
-        </div>
+    <a href="#" class="btn btn__main btn__main--orange">
+        <span class="btn__main__inside">Записаться на прием</span>
     </a>
 
-    <a href="#" class="float-ad__btn float-ad__btn--green">
-        <div class="float-ad__btn__inside">
-            Акции
-        </div>
+    <a href="#" class="btn btn__main btn__main--green">
+        <span class="btn__main__inside">Акции</span>
     </a>
+
+    <!--<a href="#" class="float-ad__btn float-ad__btn&#45;&#45;orange">-->
+        <!--<div class="float-ad__btn__inside">-->
+            <!--Записаться на прием-->
+        <!--</div>-->
+    <!--</a>-->
+
+    <!--<a href="#" class="float-ad__btn float-ad__btn&#45;&#45;green">-->
+        <!--<div class="float-ad__btn__inside">-->
+            <!--Акции-->
+        <!--</div>-->
+    <!--</a>-->
 </div>
 </body>
 </html>
