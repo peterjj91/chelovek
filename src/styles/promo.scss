@@ -614,7 +614,7 @@
       }
 
       &:hover, &:focus {
-        color: rgba(0, 0, 0, 0.6);
+        color: black;
         text-decoration: none;
       }
     }
@@ -1146,6 +1146,10 @@
       padding-right: 23px;
       @media(max-width: $screen-sm){
         width: 50%;
+      }
+      @media(max-width: 767px){
+        width: 100%;
+        padding-right: 0;
       }
 
       &:last-child {

@@ -28695,13 +28695,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.datetimepicker-time').datetimepicker({
-        locale: 'ru',
-        format: 'LT'
-    });
-});
-
-$(document).ready(function() {
     $('.datetimepicker6').datetimepicker({
         useCurrent: false,
         format:'HH:mm',

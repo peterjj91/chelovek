@@ -8128,7 +8128,7 @@ input, textarea, button {
         .promo-choice__item__description {
           font-size: 20px; } }
       .promo-choice__item__description:hover, .promo-choice__item__description:focus {
-        color: rgba(0, 0, 0, 0.6);
+        color: black;
         text-decoration: none; }
     .promo-choice__item__info {
       font-size: 16px;
@@ -8566,6 +8566,10 @@ input, textarea, button {
       @media (max-width: 1050px) {
         .promo-comment__col--mini {
           width: 50%; } }
+      @media (max-width: 767px) {
+        .promo-comment__col--mini {
+          width: 100%;
+          padding-right: 0; } }
       .promo-comment__col--mini:last-child {
         padding-right: 0; }
     .promo-comment__col--big {
