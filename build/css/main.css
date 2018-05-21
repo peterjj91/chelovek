@@ -6970,14 +6970,19 @@ p {
     height: 16px;
     background-color: rgba(151, 151, 151, 0.5); }
 
-.bootstrap-datetimepicker-widget {
-  padding: 0 !important; }
-  .bootstrap-datetimepicker-widget .btn {
-    padding: 6px; }
-
-.bootstrap-datetimepicker-widget a[data-action] {
-  padding: 0px;
-  width: 50px; }
+.bootstrap-datetimepicker-widget .timepicker {
+  width: 200px; }
+  .bootstrap-datetimepicker-widget .timepicker .timepicker-picker table {
+    display: inline-block;
+    width: 200px; }
+    .bootstrap-datetimepicker-widget .timepicker .timepicker-picker table tr {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%; }
+      .bootstrap-datetimepicker-widget .timepicker .timepicker-picker table tr:first-child {
+        display: none; }
+      .bootstrap-datetimepicker-widget .timepicker .timepicker-picker table tr:last-child {
+        display: none; }
 
 input, textarea, button {
   outline: none; }

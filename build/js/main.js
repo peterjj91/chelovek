@@ -28690,6 +28690,7 @@ $(document).ready(function() {
     $('.datetimepicker-date').datetimepicker({
         locale: 'ru',
         format: "L",
+        focusOnShow: true,
         minDate: moment()
     });
 });
@@ -28697,14 +28698,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.datetimepicker6').datetimepicker({
         useCurrent: false,
-        locale: 'ru',
-        format:'HH',
+        format: 'HH:mm',
         minDate: moment({h:8}),
         maxDate: moment({h:22})
     });
     $('.datetimepicker7').datetimepicker({
         useCurrent: false,
-        format:'HH',
+        format:'HH:mm',
         minDate: moment({h:8}),
         maxDate: moment({h:22})
     });

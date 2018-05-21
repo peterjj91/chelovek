@@ -175,9 +175,36 @@
 }
 
 .bootstrap-datetimepicker-widget {
-  padding: 0 !important;
 
-  .btn { padding: 6px; }
+  .timepicker {
+    width: 200px;
+
+    .timepicker-picker {
+
+      table {
+        display: inline-block;
+        width: 200px;
+
+        tr {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+
+          &:first-child {
+            display: none;
+          }
+
+          &:last-child {
+            display: none;
+          }
+
+          td {
+
+          }
+        }
+      }
+    }
+  }
 }
 
-.bootstrap-datetimepicker-widget a[data-action] { padding: 0px; width: 50px; }
+//.bootstrap-datetimepicker-widget a[data-action] { padding: 0px; width: 50px; }
