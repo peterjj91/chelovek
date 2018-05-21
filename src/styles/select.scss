@@ -173,3 +173,11 @@
     }
   }
 }
+
+.bootstrap-datetimepicker-widget {
+  padding: 0 !important;
+
+  .btn { padding: 6px; }
+}
+
+.bootstrap-datetimepicker-widget a[data-action] { padding: 0px; width: 50px; }

@@ -120,13 +120,14 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('.datetimepicker6').datetimepicker({
         useCurrent: false,
-        format:'HH:mm',
+        locale: 'ru',
+        format:'HH',
         minDate: moment({h:8}),
         maxDate: moment({h:22})
     });
     $('.datetimepicker7').datetimepicker({
         useCurrent: false,
-        format:'HH:mm',
+        format:'HH',
         minDate: moment({h:8}),
         maxDate: moment({h:22})
     });

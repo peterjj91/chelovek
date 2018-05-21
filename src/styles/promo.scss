@@ -504,11 +504,11 @@
       .promo-choice {
         &__item {
           &__pop {
-            display: inline-block;
+            //display: inline-block;
           }
 
           &__description {
-
+            opacity: 0.5;
           }
         }
       }
