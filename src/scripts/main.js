@@ -15,19 +15,19 @@ $(document).ready(function() {
             {
                 breakpoint: 1950,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                 }
             },
             {
                 breakpoint: 1630,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                 }
             },
             {
-                breakpoint: 1300,
+                breakpoint: 999,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                 }
             },
             {

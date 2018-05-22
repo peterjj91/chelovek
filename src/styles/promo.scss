@@ -210,15 +210,22 @@
   }
 
   li {
-    @include make-xs-column(12);
-    @include make-sm-column(8);
+    @include make-xs-column(24);
     @include make-md-column(4);
     padding-bottom: 13px;
     position: relative;
 
+    @media(max-width: 1050px){
+      padding: 0px 10px !important;
+    }
+    @media(min-width: 767px){
+      @include make-xs-column(4);
+    }
+    @media(max-width: 767px){
+      margin-bottom: 30px;
+    }
     @media(max-width: 500px){
       width: 100%;
-      margin-bottom: 30px;
     }
 
     &:after {
@@ -234,8 +241,8 @@
     &:last-child {
       border-right: none;
 
-      @media(max-width: 500px){
-        margin-bottom: 0;
+      @media(max-width: 767px){
+        //margin-bottom: 0;
       }
 
       &:after {
@@ -254,11 +261,10 @@
     display: table-cell;
     vertical-align: bottom;
 
-    @media(max-width: 500px){
+    @media(max-width: 767px){
       display: inline-block;
-      width: 100%;
       vertical-align: top;
-      text-align: center;
+      width: 100%;
     }
 
     &__wrapper {
@@ -270,7 +276,12 @@
       @media(max-width: $screen-lg){
         margin-bottom: 5px;
       }
-
+      @media(max-width: 767px){
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
       @media(max-width: 500px){
         height: auto;
         display: inline-block;
@@ -284,7 +295,7 @@
     display: table-cell;
     vertical-align: middle;
 
-    @media(max-width: 500px){
+    @media(max-width: 767px){
       display: inline-block;
       width: 100%;
       vertical-align: top;
@@ -297,7 +308,10 @@
       height: 80px;
       padding: 0px 15px;
 
-      @media(max-width: 500px){
+      @media(max-width: 1050px){
+        padding: 0;
+      }
+      @media(max-width: 767px){
         display: inline-block;
         vertical-align: top;
         height: auto;
@@ -315,6 +329,9 @@
     @media(max-width: $screen-lg){
       font-size: 17px;
       line-height: normal;
+    }
+    @media(max-width: 1050px){
+      font-size: 14px;
     }
   }
 }
@@ -462,12 +479,22 @@
   &--promo {
     margin-bottom: 30px;
   }
+
+  &--service {
+    margin-bottom: 30px;
+  }
 }
 
 .promo-choice {
-  padding: 0px 0px 70px 0px;
+  padding: 0px 0px 30px 0px;
+  //padding: 0;
+  //margin-bottom: -40px;
   @media(max-width: $screen-sm){
     padding-top: 20px;
+  }
+  @media(max-width: 600px){
+    margin-bottom: 0;
+    padding-bottom: 0px;
   }
 
   &__title {
@@ -475,7 +502,20 @@
   }
 
   &__breadcrumb {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
     margin-bottom: 20px;
+
+    @media(max-width: 600px){
+      margin-bottom: 0;
+    }
+
+    .breadcrumb {
+      @media(max-width: 600px){
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__text {
@@ -493,6 +533,7 @@
 
     @media(max-width: 600px){
       width: 100%;
+      padding-bottom: 30px;
     }
 
     &:hover, &:focus {
@@ -503,12 +544,20 @@
     &:hover {
       .promo-choice {
         &__item {
-          &__pop {
-            //display: inline-block;
-          }
-
           &__description {
             opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    &--hover {
+      &:hover {
+        .promo-choice {
+          &__item {
+            &__pop {
+              display: inline-block;
+            }
           }
         }
       }
@@ -526,12 +575,17 @@
       margin-right: -28px;
       font-size: 0;
       text-align: center;
-      margin-top: 88px;
+      margin-top: 0px;
       border-radius: 5px;
       border: 2px solid white;
+      margin-bottom: -60px;
 
       @media(max-width: $screen-sm){
-        margin-top: 30px;
+        //margin-top: 30px;
+      }
+      @media(max-width: 600px) {
+        margin-bottom: 0;
+        padding-bottom: 30px;
       }
     }
 
@@ -1169,22 +1223,33 @@
 }
 
 .promo-contact {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
   &__item {
     margin-bottom: 30px;
 
+    @media(max-width: $screen-lg){
+      margin-bottom: 20px;
+    }
+
     &:last-child {
-      margin-bottom: 0;
+      //margin-bottom: 0;
     }
 
     &__wrapper {
-      margin-top: 42px;
+      margin-top: 20px;
       @media(max-width: $screen-lg){
-        margin-top: 0;
+        //margin-top: 0;
       }
     }
 
     &__title {
       margin-bottom: 30px;
+      @media(max-width: $screen-sm){
+        margin-bottom: 10px;
+      }
     }
 
     &__description {
@@ -1222,12 +1287,12 @@
 }
 
 .promo-profile {
-  width: 243px !important;
+  //width: 243px !important;
   text-align: center;
   overflow: hidden;
 
   @media(max-width: 800px){
-    width: 180px !important;
+    //width: 180px !important;
   }
 
   &__img {
