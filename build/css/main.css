@@ -6684,77 +6684,107 @@ strong {
   display: inline-block; }
   .icon__profile {
     background-image: url(../img/sprite.png);
+    background-position: -125px 0px;
+    width: 54px;
+    height: 54px; }
+    .icon__profile:hover {
+      background-image: url(../img/sprite.png);
+      background-position: -125px -59px;
+      width: 54px;
+      height: 54px; }
+  .icon__profile2 {
+    background-image: url(../img/sprite.png);
+    background-position: -117px -180px;
+    width: 57px;
+    height: 45px; }
+    .icon__profile2:hover {
+      background-image: url(../img/sprite.png);
+      background-position: -55px -180px;
+      width: 57px;
+      height: 45px; }
+  .icon__dialog {
+    background-image: url(../img/sprite.png);
+    background-position: -58px -121px;
+    width: 53px;
+    height: 54px; }
+    .icon__dialog:hover {
+      background-image: url(../img/sprite.png);
+      background-position: 0px -121px;
+      width: 53px;
+      height: 54px; }
+  .icon__check {
+    background-image: url(../img/sprite.png);
     background-position: -66px -59px;
     width: 54px;
     height: 54px; }
-  .icon__profile2 {
-    background-image: url(../img/sprite.png);
-    background-position: 0px -181px;
-    width: 34px;
-    height: 35px; }
-  .icon__dialog {
-    background-image: url(../img/sprite.png);
-    background-position: -125px 0px;
-    width: 53px;
-    height: 54px; }
-  .icon__check {
-    background-image: url(../img/sprite.png);
-    background-position: -66px 0px;
-    width: 54px;
-    height: 54px; }
+    .icon__check:hover {
+      background-image: url(../img/sprite.png);
+      background-position: -66px 0px;
+      width: 54px;
+      height: 54px; }
   .icon__clock-grey {
     background-image: url(../img/sprite.png);
-    background-position: -242px -101px;
+    background-position: -100px -238px;
     width: 20px;
     height: 20px; }
   .icon__calendar {
     background-image: url(../img/sprite.png);
-    background-position: -242px 0px;
+    background-position: 0px -238px;
     width: 20px;
     height: 21px; }
   .icon__like {
     background-image: url(../img/sprite.png);
-    background-position: -183px 0px;
+    background-position: -240px 0px;
     width: 54px;
     height: 47px; }
+    .icon__like:hover {
+      background-image: url(../img/sprite.png);
+      background-position: -240px -52px;
+      width: 54px;
+      height: 47px; }
   .icon__location2 {
     background-image: url(../img/sprite.png);
-    background-position: -56px -121px;
+    background-position: -116px -121px;
     width: 50px;
     height: 54px; }
+    .icon__location2:hover {
+      background-image: url(../img/sprite.png);
+      background-position: -184px -120px;
+      width: 50px;
+      height: 54px; }
   .icon__fb {
     background-image: url(../img/sprite.png);
-    background-position: -125px -59px;
+    background-position: -184px 0px;
     width: 51px;
     height: 55px; }
   .icon__vk {
     background-image: url(../img/sprite.png);
-    background-position: 0px -121px;
+    background-position: -184px -60px;
     width: 51px;
     height: 55px; }
   .icon__inst {
     background-image: url(../img/sprite.png);
-    background-position: -111px -121px;
+    background-position: 0px -180px;
     width: 50px;
     height: 53px; }
   .icon__fb-grey {
     background-image: url(../img/sprite.png);
-    background-position: -183px -52px;
+    background-position: -240px -184px;
     width: 35px;
     height: 35px; }
   .icon__vk-grey {
     background-image: url(../img/sprite.png);
-    background-position: -183px -92px;
+    background-position: -240px -104px;
     width: 35px;
     height: 35px; }
   .icon__inst-grey {
     background-image: url(../img/sprite.png);
-    background-position: -183px -132px;
+    background-position: -240px -144px;
     width: 35px;
     height: 35px; }
   .icon__arrow-down {
     background-image: url(../img/sprite.png);
-    background-position: -39px -181px;
+    background-position: -179px -180px;
     width: 24px;
     height: 24px; }
 
@@ -6893,7 +6923,7 @@ p {
       border-left: 1px solid #bfbfbf; }
     .bootstrap-select .dropdown-toggle .caret {
       background-image: url(../img/sprite.png);
-      background-position: -242px -151px;
+      background-position: -280px -104px;
       width: 14px;
       height: 14px;
       position: absolute;
@@ -7445,12 +7475,12 @@ input, textarea, button {
         padding-bottom: 6px; }
       .header__list__text--phone:before {
         background-image: url(../img/sprite.png);
-        background-position: -68px -181px;
+        background-position: -208px -180px;
         width: 24px;
         height: 19px; }
       .header__list__text--time:before {
         background-image: url(../img/sprite.png);
-        background-position: -242px -76px;
+        background-position: -25px -238px;
         width: 20px;
         height: 20px; }
       .header__list__text--copyright:before {
@@ -7464,19 +7494,19 @@ input, textarea, button {
           color: rgba(225, 140, 68, 0.7); }
         .header__list__text--email:before {
           background-image: url(../img/sprite.png);
-          background-position: -242px -26px;
+          background-position: -125px -238px;
           width: 20px;
           height: 20px; }
       .header__list__text--location:before {
         background-image: url(../img/sprite.png);
-        background-position: -242px -51px;
+        background-position: -50px -238px;
         width: 20px;
         height: 20px; }
       .header__list__text--subway {
         margin-top: -3px; }
         .header__list__text--subway:before {
           background-image: url(../img/sprite.png);
-          background-position: -97px -181px;
+          background-position: -179px -209px;
           width: 24px;
           height: 16px; }
   .header__slider {
@@ -8038,6 +8068,12 @@ input, textarea, button {
       border-right: none; }
       .promo-icon li:last-child:after {
         display: none; }
+  .promo-icon__item:hover, .promo-icon__item:focus {
+    text-decoration: none; }
+    .promo-icon__item:hover p, .promo-icon__item:focus p {
+      color: #408146; }
+    .promo-icon__item:hover .promo-icon__text, .promo-icon__item:focus .promo-icon__text {
+      color: #408146; }
   .promo-icon__img {
     display: table-cell;
     vertical-align: bottom; }
@@ -8271,7 +8307,6 @@ input, textarea, button {
       text-align: center;
       margin-top: 0px;
       border-radius: 5px;
-      border: 2px solid white;
       margin-bottom: -60px; }
       .promo-choice__item__wrapper:before, .promo-choice__item__wrapper:after {
         content: " ";
@@ -8319,7 +8354,7 @@ input, textarea, button {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(255, 255, 255, 0.95);
+      background-color: rgba(64, 129, 70, 0.5);
       font-size: 20px;
       border-radius: 5px;
       transition: all .2s ease-in-out; }
@@ -8330,7 +8365,7 @@ input, textarea, button {
       .promo-choice__item__pop__text {
         display: table-cell;
         vertical-align: middle;
-        color: black; }
+        color: white; }
     .promo-choice__item__description {
       font-size: 34px;
       font-family: Cambria-Bold;
@@ -8592,7 +8627,7 @@ input, textarea, button {
       top: 5px;
       left: 0;
       background-image: url(../img/sprite.png);
-      background-position: -39px -181px;
+      background-position: -179px -180px;
       width: 24px;
       height: 24px; }
     .promo-card__topic__more__text {
@@ -8847,6 +8882,27 @@ input, textarea, button {
 .promo-profile {
   text-align: center;
   overflow: hidden; }
+  .promo-profile:hover .promo-profile__pop {
+    opacity: 1; }
+  .promo-profile__pop {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 129, 70, 0.5);
+    font-size: 16px;
+    transition: all .1s ease-in-out;
+    padding: 10px 10px; }
+    .promo-profile__pop__inside {
+      display: table;
+      width: 100%;
+      height: 100%; }
+    .promo-profile__pop__text {
+      display: table-cell;
+      vertical-align: middle;
+      color: white; }
   .promo-profile__img {
     height: 240px;
     width: 100%;
@@ -8876,6 +8932,9 @@ input, textarea, button {
       .promo-profile__description {
         padding-left: 5px;
         padding-right: 5px; } }
+  .promo-profile--thin {
+    max-width: 240px;
+    width: 100%; }
 
 .promo-news {
   position: relative; }
@@ -9179,7 +9238,7 @@ input, textarea, button {
   .breadcrumb li + li:before {
     content: "";
     background-image: url(../img/sprite.png);
-    background-position: -242px -170px;
+    background-position: -280px -123px;
     width: 12px;
     height: 10px;
     font-size: 0;

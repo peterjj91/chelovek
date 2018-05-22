@@ -3,19 +3,35 @@
   display: inline-block;
 
   &__profile {
-    @include sprite($profile)
+    @include sprite($profile);
+
+    &:hover {
+      @include sprite($profile-green);
+    }
   }
 
   &__profile2 {
-    @include sprite($profile2)
+    @include sprite($profile2);
+
+    &:hover {
+      @include sprite($profile2-green);
+    }
   }
 
   &__dialog {
-    @include sprite($dialog)
+    @include sprite($dialog);
+
+    &:hover {
+      @include sprite($dialog-green);
+    }
   }
 
   &__check {
-    @include sprite($check)
+    @include sprite($check);
+
+    &:hover {
+      @include sprite($check-green);
+    }
   }
 
   &__clock-grey {
@@ -27,11 +43,19 @@
   }
 
   &__like {
-    @include sprite($like)
+    @include sprite($like);
+
+    &:hover {
+      @include sprite($like-green);
+    }
   }
 
   &__location2 {
-    @include sprite($location2)
+    @include sprite($location2);
+
+    &:hover {
+      @include sprite($location2-green);
+    }
   }
 
   &__fb {
