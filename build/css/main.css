@@ -8202,7 +8202,8 @@ input, textarea, button {
   .promo-doctor--promo {
     margin-bottom: 30px; }
   .promo-doctor--service {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background-color: #f0f0f0; }
 
 .promo-choice {
   padding: 0px 0px 30px 0px; }
