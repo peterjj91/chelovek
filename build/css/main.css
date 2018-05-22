@@ -8222,11 +8222,10 @@ input, textarea, button {
     vertical-align: top;
     margin-bottom: 20px; }
     @media (max-width: 600px) {
-      .promo-choice__breadcrumb {
-        margin-bottom: 0; } }
-    @media (max-width: 600px) {
       .promo-choice__breadcrumb .breadcrumb {
         margin-bottom: 0; } }
+    .promo-choice__breadcrumb--promo .breadcrumb {
+      margin-bottom: 0; }
   .promo-choice__text {
     margin-bottom: 70px; }
   .promo-choice__item {
@@ -8803,8 +8802,6 @@ input, textarea, button {
     @media (max-width: 1950px) {
       .promo-contact__item {
         margin-bottom: 20px; } }
-    .promo-contact__item__wrapper {
-      margin-top: 20px; }
     .promo-contact__item__title {
       margin-bottom: 30px; }
       @media (max-width: 1050px) {
@@ -8841,7 +8838,7 @@ input, textarea, button {
   .promo-contact__map {
     width: 100%;
     vertical-align: top;
-    margin-bottom: 70px; }
+    margin-bottom: 10px; }
     .promo-contact__map__iframe {
       width: 100%;
       height: 640px;
