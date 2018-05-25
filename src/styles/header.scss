@@ -693,6 +693,18 @@
       }
     }
   }
+
+  .dropdown-menu {
+    margin-top: 0 !important;
+  }
+
+  .dropdown {
+    &:hover {
+      .dropdown-menu {
+        display: block;
+      }
+    }
+  }
 }
 
 .navbar {

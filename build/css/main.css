@@ -7657,6 +7657,10 @@ input, textarea, button {
       .nav li a:hover, .nav li a:focus {
         color: rgba(64, 129, 70, 0.6);
         background-color: transparent; }
+  .nav .dropdown-menu {
+    margin-top: 0 !important; }
+  .nav .dropdown:hover .dropdown-menu {
+    display: block; }
 
 .navbar {
   border: none;
