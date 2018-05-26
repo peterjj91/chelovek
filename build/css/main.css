@@ -7661,7 +7661,7 @@ input, textarea, button {
     margin-top: 0 !important;
     box-shadow: none;
     border: none; }
-    @media (max-width: 1390px) {
+    @media (max-width: 1050px) {
       .nav .dropdown-menu {
         position: relative;
         width: 100%; } }

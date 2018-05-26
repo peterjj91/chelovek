@@ -699,7 +699,7 @@
     box-shadow: none;
     border: none;
 
-    @media(max-width: $screen-md){
+    @media(max-width: $screen-sm){
       position: relative;
       width: 100%;
     }
