@@ -28584,6 +28584,21 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('.promo-banner').slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 6000,
+    });
+});
+
+$(document).ready(function() {
     $('.slider-many').slick({
         infinite: true,
         slidesToShow: 5,

@@ -696,9 +696,18 @@
 
   .dropdown-menu {
     margin-top: 0 !important;
+    box-shadow: none;
+    border: none;
+
+    @media(max-width: $screen-md){
+      position: relative;
+      width: 100%;
+    }
   }
 
   .dropdown {
+    color: #306F35;
+
     &:hover {
       .dropdown-menu {
         display: block;

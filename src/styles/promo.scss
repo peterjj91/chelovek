@@ -4,6 +4,24 @@
   position: relative;
   overflow: hidden;
 
+  .slick-list {
+    height: 100%;
+
+    .slick-track {
+      height: 100%;
+    }
+
+    .slick-slide {
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+
+  &__item {
+    height: 100%;
+  }
+
   img {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -21,7 +39,7 @@
     position: absolute;
     left: 10%;
     top: 10%;
-    //transform: translate(-50%, -50%);
+    //transform: trapromo-bannernslate(-50%, -50%);
     padding: 5px 20px 10px 20px;
     background: white;
   }
@@ -144,16 +162,40 @@
       padding-left: 0;
     }
     @media(max-width: $screen-mob){
-      //display: none;
+
     }
 
     li {
       display: inline-block;
       vertical-align: top;
       margin-right: 42px;
+      @media(max-width: $screen-mob){
+        text-align: center !important;
+      }
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+
+    .dropdown-toggle {
+      display: inline-block;
+
+      @media(max-width: $screen-mob){
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .caret {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 8px;
+
+      @media(max-width: $screen-mob){
+        vertical-align: sub;
+        margin-top: 0;
+        margin-left: 10px;
       }
     }
 
