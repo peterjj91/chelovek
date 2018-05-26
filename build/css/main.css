@@ -7727,9 +7727,6 @@ input, textarea, button {
   .navbar-nav {
     text-align: center;
     text-transform: uppercase; }
-    @media (max-width: 1300px) {
-      .navbar-nav {
-        text-align: right; } }
     .navbar-nav > li {
       float: none; }
   .navbar .navbar-toggle {
